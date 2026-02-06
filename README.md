@@ -56,26 +56,28 @@ The Grid provides:
 
 ---
 
-## ⚡ Quick Start
+## 🚧 Project Status: Architecture Phase
+
+**Current Phase:** `v0.1.0 (Specification)`
+
+This repository currently hosts the **Architectural Specification** and **Tokenomics Whitepaper** for The Grid. The core protocol code is under private audit and will be released in phases starting Q2 2026.
+
+We are building in public, starting with the Philosophy.
+
+---
+
+## ⚡ Quick Start (Concepts)
 
 ### Prerequisites
-- Node.js 18+
-- Solana CLI
-- A funded Solana wallet
+- Understanding of Agentic Economies
+- Solana Wallet (for future $GRID interactions)
 
-### Environment Setup
-```bash
-export SOLANA_PRIVATE_KEY="your-base58-private-key"
-export SOLANA_RPC_URL="https://your-rpc-endpoint.com"  # Optional
-```
+### Core Concepts
+1. **The Friction Tax**: Why human rails fail for agents.
+2. **Burn-for-Compute**: The deflationary engine.
+3. **Sovereign Swarm**: The governance topology.
 
-### Example: Buy $GRID
-```bash
-# Using Grid Terminal
-/pump-buy <GRID_MINT_ADDRESS> 0.5 10
-```
-
-See [terminal/SKILL.md](terminal/SKILL.md) for full command reference.
+See [docs/grid-whitepaper.md](docs/grid-whitepaper.md) for the full technical breakdown.
 
 ---
 
