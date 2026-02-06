@@ -1,0 +1,24 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (if adding code later)
+node_modules/
+npm-debug.log
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Build artifacts
+dist/
+build/
