@@ -1,9 +1,9 @@
 # Media Assets
 
-This directory should contain:
+This directory contains:
 
-- `logo.png` — The Grid logo (recommended: 512x512 PNG with transparency)
-- Additional brand assets as needed
+- `logo.png` — The Grid logo (512x512 PNG)
+- `banner.png` — Social media banner
 
 ## Usage
 
@@ -13,6 +13,7 @@ Logo can be used for:
 - Social media profiles
 - Hackathon submissions
 
-## Note
-
-Please add your logo.png file to this directory before publishing.
+Banner can be used for:
+- GitHub repository banner
+- Social media headers
+- Presentation backgrounds

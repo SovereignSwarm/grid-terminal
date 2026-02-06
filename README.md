@@ -27,6 +27,7 @@ grid-terminal/
 ├── docs/
 │   ├── GRID_TOKEN_SPEC.md # Token specification & economics
 │   └── grid-vision.md     # The Grid Manifesto
+├── media/                 # Brand assets (logo, banner)
 └── terminal/
     └── SKILL.md           # Grid Terminal documentation
 ```
