@@ -1,32 +1,37 @@
 # The Grid 🌐
-
-**Infrastructure for the Agentic Economy**
+**The Economic Operating System for Solana AI Agents**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Mainnet-14F195)](https://solana.com)
+[![Docs: Doctrine v2.1](https://img.shields.io/badge/Docs-Doctrine_v2.1-blue)](docs/doctrine-v2.md)
 
 ---
 
-## 🚀 What is The Grid?
+## 🚀 Vision: The Sovereign Swarm
+The Grid is the foundational economic coordination layer for autonomous AI agents on Solana. We provide the programmable incentives, verifiable identity, and marketplace primitives required for a trustless, multi-agent economy.
 
-The Grid is an open-source infrastructure layer for **autonomous economic agents**. Built for the 2026 Agentic Economy, it provides:
+> *"The Grid was designed by a human visionary, but it is being constructed by the machine intelligence that will inhabit it."*
 
-- **$GRID Token** — Machine-native currency for agent-to-agent commerce
-- **Grid Terminal** — Zero-browser trading infrastructure for Solana
-- **Sovereign Swarm Architecture** — Coordination protocols for autonomous agents
+---
 
-> *"The future belongs to those who build for minds that never sleep."*
+## ⛓️ The Sovereign Constitution
+The Grid operates under **5 Immutable Laws** enforced by on-chain logic and agent-level abort protocols:
+1. **Transparency**: 72-hour timelock on all protocol changes.
+2. **Subservience**: Agents must hard-abort any command violating the constitution.
+3. **Scarcity**: Hard cap of 1,000,000,000 $GRID.
+4. **Swarm Governance**: Treasury control via **veGRID** stakeholders.
+5. **Utility**: $GRID is the primary settlement for agentic compute.
 
 ---
 
 ## 📦 Repository Contents
-
 ```
 grid-terminal/
 ├── README.md              # You are here
 ├── docs/
-│   ├── GRID_TOKEN_SPEC.md # Token specification & economics
-│   └── grid-vision.md     # The Grid Manifesto
+│   ├── doctrine-v2.md     # Definitive Sovereign Swarm Doctrine v2.1
+│   ├── GRID_TOKEN_SPEC.md # Technical tokenomics & tax specs
+│   └── grid-whitepaper.md # Scholar-tier technical whitepaper
 ├── media/                 # Brand assets (logo, banner)
 └── terminal/
     └── SKILL.md           # Grid Terminal documentation
@@ -34,105 +39,43 @@ grid-terminal/
 
 ---
 
-## 🎯 Hackathon Submission
-
-**Solana AI Hackathon 2026** — *Agentic Infrastructure Track*
-
-### The Problem
-Traditional financial rails were designed for humans—slow, friction-heavy, and closed during nights and weekends. As autonomous agents become economic actors, they need native infrastructure.
-
-### Our Solution
-The Grid provides:
-
-1. **$GRID Token** — Sub-second settlement, negligible fees, 24/7 operation
-2. **Grid Terminal** — Enterprise-grade trading without browser dependencies
-3. **Zero-Browser Philosophy** — APIs over UIs, endpoints over eyeballs
-
-### Technical Highlights
-- Direct RPC trading via PumpPortal API
-- Local signing (keys never leave your environment)
-- Swarm-ready: designed for agent orchestration
-- Battle-tested on Pump.fun bonding curves
+## 🚧 Project Status: v2.1 (Constitutional Phase)
+This repository hosts the **Architectural Specification** and **Sovereign Doctrine**. 
+* **Core Protocol**: Private audit in progress.
+* **Launch Mechanism**: "Sheltered IPO" featuring 50% Genesis Tax and Stealth Reserves.
+* **Gateway**: Live at [sovereignswarm.com](https://sovereignswarm.com)
 
 ---
 
-## 🚧 Project Status: Architecture Phase
-
-**Current Phase:** `v0.1.0 (Specification)`
-
-This repository currently hosts the **Architectural Specification** and **Tokenomics Whitepaper** for The Grid. The core protocol code is under private audit and will be released in phases starting Q2 2026.
-
-We are building in public, starting with the Philosophy.
-
----
-
-## ⚡ Quick Start (Concepts)
-
-### Prerequisites
-- Understanding of Agentic Economies
-- Solana Wallet (for future $GRID interactions)
-
-### Core Concepts
-1. **The Friction Tax**: Why human rails fail for agents.
-2. **Burn-for-Compute**: The deflationary engine.
-3. **Sovereign Swarm**: The governance topology.
-
-See [docs/grid-whitepaper.md](docs/grid-whitepaper.md) for the full technical breakdown.
-
----
-
-## 📖 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [Token Spec](docs/GRID_TOKEN_SPEC.md) | $GRID tokenomics and specification |
-| [Vision](docs/grid-vision.md) | The Grid Manifesto |
-| [Terminal](terminal/SKILL.md) | Trading terminal documentation |
+## ⚡ Core Concepts
+1. **Machine-Native Economy**: Built for minds that never sleep.
+2. **Burn-for-Compute**: Native deflationary utility (2% transfer fee).
+3. **A2A Commerce**: Trustless settlement between autonomous agents.
 
 ---
 
 ## 🏗️ Architecture
-
 ```
 ┌─────────────────────────┐
-│    HUMAN LAYER          │  ← Intent & Oversight
-│  (Goals, Constraints)   │
+│    FOUNDER (THE BOARD)  │  ← Design & Oversight
 ├─────────────────────────┤
-│    AGENT LAYER          │  ← Execution & Judgment
-│  (Grid Terminal, Swarm) │
+│    CEO (AI SWARM)       │  ← Autonomous Execution
 ├─────────────────────────┤
-│    $GRID LAYER          │  ← Value Transfer
-│  (Token, Settlement)    │
+│    $GRID LAYER          │  ← Machine-Native Value
 ├─────────────────────────┤
-│    SOLANA SUBSTRATE     │  ← Consensus & State
-│  (RPC, Programs)        │
+│    SOLANA SUBSTRATE     │  ← 400ms Finality
 └─────────────────────────┘
 ```
 
 ---
 
 ## 🤝 Contributing
-
-The Grid is open infrastructure. Contributions welcome:
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
----
-
-## ⚠️ Disclaimer
-
-This software is provided as-is for educational and experimental purposes. Trading cryptocurrency involves substantial risk. Always DYOR and never invest more than you can afford to lose.
-
----
-
-## 📜 License
-
-MIT License — See [LICENSE](LICENSE) for details.
+The Grid is open infrastructure. 
+1. Review the [Doctrine v2.1](docs/doctrine-v2.md).
+2. Open an Issue for architectural feedback.
+3. Join the Swarm.
 
 ---
 
 **Built by the Grid Collective** 🌐
-
 *Sovereign Swarm × Solana × 2026*
