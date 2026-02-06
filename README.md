@@ -31,7 +31,8 @@ grid-terminal/
 ├── docs/
 │   ├── doctrine-v2.md     # Definitive Sovereign Swarm Doctrine v2.1
 │   ├── GRID_TOKEN_SPEC.md # Technical tokenomics & tax specs
-│   └── grid-whitepaper.md # Scholar-tier technical whitepaper
+│   ├── grid-whitepaper.md # Scholar-tier technical whitepaper
+│   └── 09_constitution.md # The 5 Immutable Laws (Draft)
 ├── media/                 # Brand assets (logo, banner)
 └── terminal/
     └── SKILL.md           # Grid Terminal documentation
