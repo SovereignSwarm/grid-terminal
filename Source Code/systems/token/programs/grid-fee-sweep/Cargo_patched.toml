@@ -1,0 +1,46 @@
+[package]
+name = "grid-fee-sweep"
+version = "0.1.0"
+description = "Fee sweep program for GRID token"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "grid_fee_sweep"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+solana-program = "1.18.11"
+anchor-spl = { version = "0.30.1", features = ["token"] }
+spl-token-2022 = "3.0.4"
+# spl-transfer-hook-interface = "0.6.5" # Only if needed
+# spl-tlv-account-resolution = "0.6.3" # Only if needed
+
+[dev-dependencies]
+solana-program-test = "1.18.11"
+solana-sdk = "1.18.11"
+
+[patch.crates-io]
+# THE NUCLEAR OPTION: Force Safe Versions
+# Vector 1: wit-bindgen 0.51 (Edition 2024)
+tempfile = "=3.10.1"
+jobserver = "=0.1.31"
+getrandom = "=0.2.17"
+
+# Vector 2: constant_time_eq 0.4 (Edition 2024)
+blake3 = "=1.5.0"
+
+# Vector 3: async-trait 0.1.89 (Edition 2024)
+async-trait = "=0.1.80"
+
+# Vector 4: Identity Workspace Fixes
+base64ct = "=1.6.0"
+winnow = "=0.5.40"
+zerocopy = "=0.7.34"

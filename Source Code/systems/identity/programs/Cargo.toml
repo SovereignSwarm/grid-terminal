@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "agent_identity"
+]
+resolver = "2"
+
+[workspace.dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+
+[profile.release]
+overflow-checks = true
+
+
+
+

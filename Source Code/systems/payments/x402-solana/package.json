@@ -1,0 +1,30 @@
+{
+    "name": "@grid/x402-solana",
+    "version": "0.1.0",
+    "description": "x402 HTTP Payment Protocol for Solana - Agent-to-Agent Micropayments",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "lint": "eslint src/"
+    },
+    "dependencies": {
+        "@solana/web3.js": "1.95.8",
+        "@solana/spl-token": "^0.4.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "jest": "^29.0.0",
+        "@types/jest": "^29.0.0",
+        "ts-jest": "^29.0.0"
+    },
+    "keywords": [
+        "solana",
+        "x402",
+        "micropayments",
+        "ai-agents"
+    ],
+    "license": "BSL-1.1"
+}

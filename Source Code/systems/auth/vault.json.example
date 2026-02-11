@@ -1,0 +1,32 @@
+{
+  "_comment": "TEMPLATE ONLY - Real credentials in Grid-Private/auth/vault.json",
+  "moltbook": {
+    "api_key": "YOUR_API_KEY_HERE",
+    "agent_name": "YOUR_AGENT_NAME_HERE"
+  },
+  "simmer": {
+    "api_key": "YOUR_API_KEY_HERE",
+    "wallet": "YOUR_WALLET_ADDRESS_HERE"
+  },
+  "x": {
+    "email": "YOUR_EMAIL_HERE",
+    "handle": "YOUR_HANDLE_HERE",
+    "status": "TEMPLATE"
+  },
+  "solana": {
+    "deployer": "YOUR_DEPLOYER_ADDRESS_HERE",
+    "deployer_pk": "NEVER_COMMIT_PRIVATE_KEYS",
+    "board_member": "YOUR_ADDRESS_HERE"
+  },
+  "bankr": {
+    "api_key": "YOUR_API_KEY_HERE"
+  },
+  "vercel": {
+    "user_id": "YOUR_USER_ID_HERE",
+    "api_key": "YOUR_API_KEY_HERE",
+    "team_id": "YOUR_TEAM_ID_HERE"
+  },
+  "cloudflare": {
+    "api_token": "YOUR_API_TOKEN_HERE"
+  }
+}

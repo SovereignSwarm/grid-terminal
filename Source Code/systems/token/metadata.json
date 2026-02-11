@@ -1,0 +1,52 @@
+{
+  "name": "The Grid",
+  "symbol": "GRID",
+  "description": "The Industrial OS for Agentic Capital. Infrastructure token for autonomous AI coordination on Solana.",
+  "image": "https://grid.sovereignswarm.io/logo.png",
+  "external_url": "https://grid.sovereignswarm.io",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Infrastructure Token"
+    },
+    {
+      "trait_type": "Network",
+      "value": "Solana"
+    },
+    {
+      "trait_type": "Standard",
+      "value": "SPL Token-2022"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1,073,741,824"
+    },
+    {
+      "trait_type": "Tax",
+      "value": "2% (1% burn, 1% ops)"
+    },
+    {
+      "trait_type": "Extension",
+      "value": "Transfer Hook"
+    }
+  ],
+  "properties": {
+    "category": "Token",
+    "creators": [
+      {
+        "address": "BqPoJnqNLeQZCV5d9YY3Fo2LwFw17fRZbTTkEWGJJRUU",
+        "share": 100
+      }
+    ],
+    "files": [
+      {
+        "uri": "https://grid.sovereignswarm.io/logo.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  "collection": {
+    "name": "Sovereign Swarm Ecosystem",
+    "family": "The Grid"
+  }
+}

@@ -1,0 +1,12 @@
+[package]
+name = "grid-fee-sweep"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+# Minimal deps to trace the graph without crashing
+solana-program = "1.18.11"
+# anchor-lang = "0.30.1" # Commented out to isolate solana-program first

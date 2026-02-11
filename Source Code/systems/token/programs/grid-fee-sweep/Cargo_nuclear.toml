@@ -1,0 +1,51 @@
+[package]
+name = "grid-fee-sweep"
+version = "0.1.0"
+description = "Fee sweep program for GRID token"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "grid_fee_sweep"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+solana-program = "1.18.11"
+anchor-spl = { version = "0.30.1", features = ["token"] }
+spl-token-2022 = "3.0.4"
+
+# THE NUCLEAR OPTION: Force Safe Versions via Direct Dependency
+# This forces the resolver to unify to these versions if possible.
+
+# Vector 1: wit-bindgen (Should be GONE now)
+# wit-bindgen = "=0.4.0"
+tempfile = "=3.10.1"
+jobserver = "=0.1.31"
+getrandom = "=0.2.17"
+
+# Vector 2: constant_time_eq 0.4 (Edition 2024)
+blake3 = "=1.5.0"
+
+# Vector 3: async-trait 0.1.89 (Edition 2024)
+async-trait = "=0.1.80"
+
+# Vector 4: Identity Workspace Fixes
+base64ct = "=1.6.0"
+winnow = "=0.5.40"
+zerocopy = "=0.7.34"
+
+# Vector 5: The NEXUS (ahash 0.8.12 -> getrandom 0.3)
+ahash = "=0.8.7"
+hashbrown = "=0.14.3"
+
+# SCALPEL: Removed dev-dependencies to avoid pulling solana-client/tokio/etc tree
+# [dev-dependencies]
+# solana-program-test = "1.18.11"
+# solana-sdk = "1.18.11"

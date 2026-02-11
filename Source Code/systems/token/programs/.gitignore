@@ -1,0 +1,16 @@
+# Anchor Build Artifacts
+target/
+.anchor/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDL
+**/*.so
+**/*.so.*
+
+# Test
+.DS_Store
+test-ledger/

@@ -1,0 +1,26 @@
+{
+  "name": "@grid/token-hook",
+  "version": "1.0.0",
+  "description": "$GRID Transfer Hook - Anchor project",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test --skip-local-validator",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "verify": "anchor verify",
+    "idl:init": "anchor idl init --filepath target/idl/grid_transfer_hook.json",
+    "idl:upgrade": "anchor idl upgrade --filepath target/idl/grid_transfer_hook.json"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.8",
+    "@solana/spl-token": "^0.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.2",
+    "chai": "^4.3.10",
+    "@types/chai": "^4.3.11"
+  }
+}

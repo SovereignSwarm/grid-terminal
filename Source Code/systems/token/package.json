@@ -1,0 +1,26 @@
+{
+  "name": "@grid/token",
+  "version": "1.0.0",
+  "description": "The Grid ($GRID) token deployment and management system",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy:devnet": "ts-node src/deploy_grid.ts --network devnet",
+    "deploy:mainnet": "ts-node src/deploy_grid.ts --network mainnet",
+    "freeze": "ts-node src/freeze_control.ts --action freeze",
+    "unfreeze": "ts-node src/freeze_control.ts --action unfreeze",
+    "test": "jest",
+    "verify": "ts-node src/verify_deployment.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "@solana/spl-token": "^0.4.9",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0"
+  }
+}

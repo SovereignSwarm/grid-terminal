@@ -1,0 +1,24 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+grid_transfer_hook = "7Py52EPwuCxYJ7UiBKrk5ce14T4NTxuutHFtyoWDdqFV"
+grid_fee_sweep = "EnLPB3HoiWku9PfMKxD8RUkmwdvoTPWLZY82nGD2Bwuz"
+
+[programs.mainnet]
+grid_transfer_hook = "7Py52EPwuCxYJ7UiBKrk5ce14T4NTxuutHFtyoWDdqFV"
+grid_fee_sweep = "EnLPB3HoiWku9PfMKxD8RUkmwdvoTPWLZY82nGD2Bwuz"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 10000

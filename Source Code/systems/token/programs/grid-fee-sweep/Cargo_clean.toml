@@ -1,0 +1,34 @@
+[package]
+name = "grid-fee-sweep"
+version = "0.1.0"
+description = "Fee sweep program for GRID token"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "grid_fee_sweep"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+mainnet = []
+
+[dependencies]
+anchor-lang = { version = "0.30.1" }
+anchor-spl = { version = "0.30.1", features = ["token", "associated_token"] }
+spl-token-2022 = "3.0.4"
+solana-program = "1.18.11"
+
+# The "Toxic" Dependency Pins (Stolen from Identity Workspace)
+base64ct = "=1.6.0"
+winnow = "=0.5.40"
+toml_edit = "=0.21.0"
+indexmap = "=2.2.6"
+ahash = "=0.8.11"
+
+[dev-dependencies]
+solana-program-test = "1.18.11"
+solana-sdk = "1.18.11"

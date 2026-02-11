@@ -1,0 +1,61 @@
+{
+  "token": {
+    "name": "The Grid",
+    "symbol": "GRID",
+    "decimals": 9,
+    "supply": 1073741824,
+    "uri": "https://grid.sovereignswarm.io/metadata.json",
+    "description": "The Industrial OS for Agentic Capital. Infrastructure token for The Grid protocol on Solana."
+  },
+  "tax": {
+    "enabled": true,
+    "rate": 0.02,
+    "distribution": {
+      "burn": 0.01,
+      "operations": 0.01
+    }
+  },
+  "allocation": {
+    "liquidityPool": 45,
+    "presale": 20,
+    "treasury": 15,
+    "ecosystem": 10,
+    "founder": 7.5,
+    "team": 2.5
+  },
+  "vesting": {
+    "founder": {
+      "cliffMonths": 6,
+      "vestingMonths": 18,
+      "initialUnlock": 0
+    },
+    "team": {
+      "cliffMonths": 6,
+      "vestingMonths": 12,
+      "initialUnlock": 0
+    }
+  },
+  "wallets": {
+    "devnet": {
+      "deployer": "BqPoJnqNLeQZCV5d9YY3Fo2LwFw17fRZbTTkEWGJJRUU",
+      "operations": "BqPoJnqNLeQZCV5d9YY3Fo2LwFw17fRZbTTkEWGJJRUU",
+      "burn": "11111111111111111111111111111111"
+    },
+    "mainnet": {
+      "deployer": "BqPoJnqNLeQZCV5d9YY3Fo2LwFw17fRZbTTkEWGJJRUU",
+      "operations": "8q5ZgCsSLfkkuCYVcVZmxnJ1BzmtABjMPVkZ8ZccJe8x",
+      "burn": "11111111111111111111111111111111"
+    }
+  },
+  "extensions": {
+    "transferHook": true,
+    "metadataPointer": true,
+    "freezeAuthority": true
+  },
+  "launch": {
+    "phase": "development",
+    "devnetDate": null,
+    "mainnetDate": null,
+    "tradingEnabled": false
+  }
+}
