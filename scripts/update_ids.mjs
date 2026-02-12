@@ -37,7 +37,8 @@ const DEPLOY_DIRS = [
     path.join(TERMINAL_ROOT, 'target', 'deploy'),
     path.join(CORE_ROOT, 'systems', 'identity', 'programs', 'target', 'deploy'),
     path.join(CORE_ROOT, 'systems', 'governance', 'programs', 'target', 'deploy'),
-    path.join(CORE_ROOT, 'systems', 'token', 'programs', 'target', 'deploy')
+    path.join(CORE_ROOT, 'systems', 'token', 'programs', 'target', 'deploy'),
+    path.join(CORE_ROOT, 'systems', 'guardian_license_sale', 'programs', 'target', 'deploy')
 ];
 
 const KEYPAIRS = {
@@ -45,16 +46,19 @@ const KEYPAIRS = {
     staking: 'vegrid_staking-keypair.json',
     guard: 'policy_guard-keypair.json',
     hook: 'grid_transfer_hook-keypair.json',
-    sweep: 'grid_fee_sweep-keypair.json'
+    sweep: 'grid_fee_sweep-keypair.json',
+    sale: 'guardian_license_sale-keypair.json'
 };
 
 const ANCHOR_TOML_FILES = [
     path.join(CORE_ROOT, 'systems', 'identity', 'programs', 'Anchor.toml'),
     path.join(CORE_ROOT, 'systems', 'governance', 'programs', 'Anchor.toml'),
-    path.join(CORE_ROOT, 'systems', 'token', 'programs', 'Anchor.toml')
+    path.join(CORE_ROOT, 'systems', 'token', 'programs', 'Anchor.toml'),
+    path.join(CORE_ROOT, 'systems', 'guardian_license_sale', 'programs', 'Anchor.toml')
 ];
 
 const HOOK_LIB = path.join(CORE_ROOT, 'systems', 'token', 'programs', 'grid-transfer-hook', 'src', 'lib.rs');
+const SALE_LIB = path.join(CORE_ROOT, 'systems', 'guardian_license_sale', 'programs', 'guardian_license_sale', 'src', 'lib.rs');
 const CHAIN_CONFIG = path.join(TERMINAL_ROOT, '..', 'grid-interface', 'src', 'lib', 'chain-config.js');
 
 function getKeypair(filename) {
@@ -155,8 +159,20 @@ async function main() {
         configReplacements.push({ pattern: /feeSweep: '[^']+'/g, value: `feeSweep: '${pid}'` });
     }
 
+    if (keys.sale) {
+        const pid = keys.sale.publicKey.toBase58();
+        console.log(`Sale ID:     ${pid}`);
+        anchorReplacements.push({ pattern: /guardian_license_sale = "[^"]+"/g, value: `guardian_license_sale = "${pid}"` });
+        configReplacements.push({ pattern: /guardianLicenseSale: '[^']+'/g, value: `guardianLicenseSale: '${pid}'` });
+        hookReplacements.push({ pattern: /declare_id!\("[^"]+"\)/g, value: `declare_id!("${pid}")` });
+    }
+
     // 3. Apply Updates
     console.log("Updating files...");
+
+    if (keys.sale) {
+        updateFile(SALE_LIB, [{ pattern: /declare_id!\("[^"]+"\)/g, value: `declare_id!("${keys.sale.publicKey.toBase58()}")` }]);
+    }
 
     for (const anchorFile of ANCHOR_TOML_FILES) {
         updateFile(anchorFile, anchorReplacements);

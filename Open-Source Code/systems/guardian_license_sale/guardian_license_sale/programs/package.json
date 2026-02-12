@@ -1,0 +1,25 @@
+{
+    "name": "@grid/guardian-license-sale",
+    "version": "1.0.0",
+    "description": "$GRID Guardian Node License Sale - Anchor project",
+    "scripts": {
+        "build": "anchor build",
+        "test": "anchor test",
+        "deploy:devnet": "anchor deploy --provider.cluster devnet"
+    },
+    "dependencies": {
+        "@coral-xyz/anchor": "^0.30.1",
+        "@solana/web3.js": "^1.95.8",
+        "@solana/spl-token": "^0.4.9",
+        "@metaplex-foundation/mpl-core": "^0.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2",
+        "ts-node": "^10.9.2",
+        "chai": "^4.3.10",
+        "@types/chai": "^4.3.11",
+        "mocha": "^10.2.0",
+        "@types/mocha": "^10.0.6"
+    }
+}

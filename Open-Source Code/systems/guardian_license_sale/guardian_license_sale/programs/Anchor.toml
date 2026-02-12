@@ -1,0 +1,25 @@
+[toolchain]
+
+
+[workspace]
+members = ["guardian_license_sale"]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+guardian_license_sale = "FfA1sZdQcEps96tMhNKxwu1s3MaLx86wMHCGigKUAtpm"
+
+[programs.devnet]
+guardian_license_sale = "FfA1sZdQcEps96tMhNKxwu1s3MaLx86wMHCGigKUAtpm"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

@@ -1,0 +1,30 @@
+[package]
+name = "grid-transfer-hook"
+version = "1.0.0"
+description = "$GRID Token Transfer Hook - 2% Tax (1% burn, 1% ops)"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "grid_transfer_hook"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+spl-tlv-account-resolution = "0.4.0"
+spl-transfer-hook-interface = "0.6.5"
+spl-token-2022 = "3.0.4"
+policy-guard = { path = "../../../governance/programs/policy-guard", features = ["cpi"] }
+agent-identity = { path = "../../../identity/programs/agent_identity", features = ["cpi"] }
+solana-program = "1.18.11"
+
+[dev-dependencies]
+solana-program-test = "1.18.11"
+solana-sdk = "1.18.11"
